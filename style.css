@@ -1,0 +1,134 @@
+/*  alteração visual de toda a página */
+* {
+    /* define a margem( ou seja, o distanciamento da parte externa da caixa) */
+    margin: 0;
+    /* define o preenchimento ( ou seja o distanciamento da parte interna caixa) */
+    padding: 0;
+    /* limita um padrão de tamanho da caixa( para que assim ao alterar o padding dela não altere  tambem o seu tamanho)*/
+    box-sizing: border-box;
+  }
+
+  body {
+    /* define a cor do fundo da pagina */
+    background-color: #09090A;
+    /*  define a cor da letra */
+    color: white;
+    /* aqui determina quantos % da pagina vai ser utilizada */
+    height: 100vh;
+  }
+
+  header{
+    /* a propriedade " displey" define os tipos de exibição interno ou externo de um elemento. E o "flex" esta especificando que seu elemento será flexivel */
+    display: flex;
+    align-items: center;
+   /* está definindo o espaço entre os itens ali inseridos */
+    justify-content: space-between;
+    padding: 48px;
+    position: fixed;
+    width: 100%;
+    background-color: #09090A;
+
+}
+
+  button {
+    padding: 16px 24px;
+    /* o que deixa a borba arredondada */
+    border-radius: 8px;
+    /* está criando uma borda com especificações de " grossura da borda" " tipo de borda" e "cor da borda" */
+    border: 1px solid #8B5CF6;
+    background-color:  transparent;
+    color: white;
+    display: flex;
+    /* para centralizar ou deixa no lado esquerdo ou direito a imagem */
+    align-items: center;
+/* espaço entre os elemnetos dentro da caixa*/
+ gap:12px ;
+/* a fonte da palavra*/
+font-family: 'inter';
+/* tamanho/ espessura da letra*/
+font-weight: 600;
+/*tamanho da fonte*/
+font-size: 16px;
+/* altura da caixa*/
+line-height: 125%;
+}
+
+/*  a "#" e usada quando eu quero editar uma id no meu css*/
+#form-habits {
+
+    display: flex;
+
+    padding:   182px 48px 48px;
+}
+
+/* o "." e usado quando eu quero editar uma class no meu css */
+.habits {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+/* espaço entre os elementos */
+    gap: 24px;
+
+
+}
+
+.habit {
+/*  define o tamanho da caixa altura */
+    width: 64px;
+/*  definde a largura da caixa */
+    height: 64px;
+/*  define o tamanho da fonte "emojis" */
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days{
+    display: flex;
+    gap: 48px;
+    /* serve para determinar uma margem a esquerda */
+    margin-left: 32px;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+/*O espaço de 8px somado com os 24px do código acima entre a data e a checkbox*/
+.day div {
+/* serve para determinar uma margem abaixo  */
+    margin-bottom: 8px;
+
+font-family: 'Roboto Mono';
+font-size: 20px;
+line-height: 125%;
+color: #A1A1AA;
+text-align: center;
+}
+
+
+input{
+/* tirei a aparencia para que o arebondamento fique visivel*/
+appearance: none;
+/* serve para acessibilidade caso algum navegador não seja compativel com o codigo a cima*/
+-webkit-appearance: none;
+width: 64px;
+height: 64px;
+border: 2px solid #27272A;
+border-radius: 8px;
+background: #18181B;
+
+}
+/* pseudo- selector*/
+input:checked {
+    background: #8B5CF6;
+    border: 2px solid #A78BFA;
+}
+
+@media (max-width: 700px) {
+  button div {
+  display: none; 
+  }
+} 

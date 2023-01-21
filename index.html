@@ -1,0 +1,60 @@
+<!-- para determinar que o código esta sendo feito em HTML( em caso de navegadores que não tenham acessibilidade)-->
+<!DOCTYPE html>
+<!-- determina a linguagem do seu site -->
+<html lang="pt-br">
+<!-- respresenta uma coleção de meta dados para documentos que serão inseridos ai dentro  -->
+<head>
+  <!-- linkagem com o google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+  <!-- especifíca a coleçao de caracteres que o navegador irá usar -->
+    <meta charset="UTF-8">
+  <!-- está determinando que os códigos inseridos no projeto serão compativeis com o navegador EDGE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- este código permite uma acessibilidade maior tornando possivel acessar o meu site final atraves de celulares ou tablets...-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- o titulo da pagina -->
+    <title>Habits</title>
+  <!--Link do css com html-->
+<link rel="stylesheet" href="./style.css">
+<!--fechamento do head-->
+</head>
+<!-- parte visual do meu site aqui dentro -->
+  <body>
+<!-- define o cabeçalho da minha pagina -->
+  <header> 
+  <!-- e uma imagem em (svg)-->
+ <img src="./assets/logo.svg" alt="logomarca do aplicativo Habits">
+  <!-- botão funcional -->
+<button>
+    <img src="./assets/plus.svg" alt="ícone sinal de mais roxo ">
+
+     <div> Registrar o meu dia</div> 
+  
+    </button>
+   <!-- fechamento do header-->
+  </header>
+   <!--O elemento form representa uma seção de um documento que contem controles interativos que permitem ao usuario submeter informações a um determinado servidor web -->
+<form id="form-habits">
+  <!--conteiner generico utilizado para agrupar os elementos "habit"-->
+    <div class="habits">
+      <!-- conteiners com emojis da pagina inseridos dentro de cada div  -->
+     <div class="habit" data-name="run">🏃🏿</div>
+     <div class="habit"data-name="water">💧</div>
+     <div class="habit"data-name="academy">💪🏽</div>
+     <div class="habit"data-name="sleep">💤</div>
+     <div class="habit"data-name="dog">🐕</div>
+     <div class="habit"data-name="salad">🥗</div>
+    </div>
+    <div class="days">
+    </div>
+
+    
+</form>
+<script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js">
+</script>
+<script src="./script.js"></script>
+
+ </body>
+</html>
